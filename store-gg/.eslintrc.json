@@ -21,6 +21,10 @@
     ],
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-props-no-spreading": "off",
+        "linebreak-style":"off",
+        "label-has-associated-control": "off"
+        // "label-has-associated-control": "off"
     }
 }
