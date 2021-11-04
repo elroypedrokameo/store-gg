@@ -73,7 +73,7 @@ export default function Home() {
                 <li className="nav-item my-auto">
                   <a
                     className="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill"
-                    href="./src/sign-in.html"
+                    href="/sign-in"
                     role="button"
                   >
                     Sign In
@@ -441,7 +441,7 @@ export default function Home() {
             data-aos="fade-up"
           >
             <div className="featured-game-card position-relative">
-              <a href="./src/detail.html">
+              <a href="/detail">
                 <div className="blur-sharp">
                   <img src="/img/Thumbnail-1.png" width="205" height="270" alt="" />
                 </div>
@@ -470,7 +470,7 @@ export default function Home() {
               </a>
             </div>
             <div className="featured-game-card position-relative">
-              <a href="./src/detail.html">
+              <a href="/detail">
                 <div className="blur-sharp">
                   <img src="/img/Thumbnail-2.png" width="205" height="270" alt="" />
                 </div>
@@ -499,7 +499,7 @@ export default function Home() {
               </a>
             </div>
             <div className="featured-game-card position-relative">
-              <a href="./src/detail.html">
+              <a href="/detail">
                 <div className="blur-sharp">
                   <img src="/img/Thumbnail-3.png" width="205" height="270" alt="" />
                 </div>
@@ -528,7 +528,7 @@ export default function Home() {
               </a>
             </div>
             <div className="featured-game-card position-relative">
-              <a href="./src/detail.html">
+              <a href="/detail">
                 <div className="blur-sharp">
                   <img src="/img/Thumbnail-4.png" width="205" height="270" alt="" />
                 </div>
@@ -557,7 +557,7 @@ export default function Home() {
               </a>
             </div>
             <div className="featured-game-card position-relative">
-              <a href="./src/detail.html">
+              <a href="/detail">
                 <div className="blur-sharp">
                   <img src="/img/Thumbnail-5.png" width="205" height="270" alt="" />
                 </div>
