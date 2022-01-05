@@ -24,7 +24,8 @@
         "react/react-in-jsx-scope": "off",
         "react/jsx-props-no-spreading": "off",
         "linebreak-style":"off",
-        "label-has-associated-control": "off"
+        "label-has-associated-control": "off",
+        "jsx-a11y/anchor-is-valid": "off"
         // "label-has-associated-control": "off"
     }
 }
