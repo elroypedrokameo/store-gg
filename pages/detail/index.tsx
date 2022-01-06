@@ -3,6 +3,10 @@
 // import React from 'react';
 
 // eslint-disable-next-line import/no-unresolved
+import Footer from '../../components/organisms/Footer';
+// eslint-disable-next-line import/no-unresolved
+import Navbar from '../../components/organisms/Navbar';
+// eslint-disable-next-line import/no-unresolved
 import TopUpForm from '../../components/organisms/TopUpForm';
 // eslint-disable-next-line import/no-unresolved
 import TopUpItem from '../../components/organisms/TopUpItem';
@@ -10,6 +14,7 @@ import TopUpItem from '../../components/organisms/TopUpItem';
 function Detail() {
   return (
     <>
+      <Navbar />
       <section className="detail pt-lg-60 pb-50">
         <div className="container-xxl container-fluid">
           <div className="detail-header pb-50">
@@ -28,6 +33,7 @@ function Detail() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

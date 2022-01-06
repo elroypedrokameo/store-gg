@@ -1,7 +1,7 @@
 export default function completeCheckout() {
   return (
     <>
-      <section className="complete-checkout mx-auto pt-lg-145 pb-lg-145 pt-100 pb-80">
+      <section className="complete-checkout mx-auto pt-lg-50 pb-lg-50 pt-50 pb-50">
         <div className="container-fluid">
           <div className="text-center">
             <svg
@@ -239,7 +239,7 @@ export default function completeCheckout() {
           <div className="button-group d-flex flex-column mx-auto">
             <a
               className="btn btn-dashboard fw-medium text-lg text-white rounded-pill mb-16"
-              href="../member/overview.html"
+              href="/member"
               role="button"
             >
               My
