@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-extraneous-dependencies */
 import { Meta } from '@storybook/react';
-import StepItem, { StepItemProps } from '../../../../../../components/molecules/StepItem';
+import StepItem, { StepItemProps } from '../../../../components/molecules/StepItem';
 
 export default {
   title: 'Component/Molecules/StepItem',

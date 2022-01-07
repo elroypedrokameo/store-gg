@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-extraneous-dependencies */
 import { Meta } from '@storybook/react';
-import GameItem, { GameItemProps } from '../../../../../../components/molecules/GameItem';
+import GameItem, { GameItemProps } from '../../../../components/molecules/GameItem';
 
 export default {
   title: 'Component/Molecules/GameItem',
