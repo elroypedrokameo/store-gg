@@ -28,7 +28,8 @@
         "jsx-a11y/anchor-is-valid": "off",
         "jsx-a11y/no-redundant-roles": "off",
         "import/no-unresolved": "off",
-        "jsx-a11y/label-has-associated-control": "off"
+        "jsx-a11y/label-has-associated-control": "off",
+        "no-underscore-dangle": "off"
         // "label-has-associated-control": "off"
     }
 }

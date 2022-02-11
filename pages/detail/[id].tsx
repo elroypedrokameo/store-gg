@@ -1,17 +1,39 @@
 /* eslint-disable import/extensions */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 // import React from 'react';
-
-// eslint-disable-next-line import/no-unresolved
+import { useRouter } from 'next/router';
+import { useCallback, useEffect, useState } from 'react';
 import Footer from '../../components/organisms/Footer';
-// eslint-disable-next-line import/no-unresolved
 import Navbar from '../../components/organisms/Navbar';
-// eslint-disable-next-line import/no-unresolved
 import TopUpForm from '../../components/organisms/TopUpForm';
-// eslint-disable-next-line import/no-unresolved
 import TopUpItem from '../../components/organisms/TopUpItem';
+import { getDetailVoucer } from '../../services/player';
 
 function Detail() {
+  const { query, isReady } = useRouter();
+  const [dataItem, setDataItem] = useState({
+    name: '',
+    thumbnail: '',
+    category: {
+      name: '',
+    },
+  });
+
+  const [nominals, setNominals] = useState([]);
+  const [payments, setPayments] = useState([]);
+
+  const getVoucerDetailAPI = useCallback(async (id) => {
+    const data = await getDetailVoucer(id);
+    setDataItem(data.detail);
+    setNominals(data.detail.nominals);
+    setPayments(data.payment);
+  }, []);
+
+  useEffect(() => {
+    if (isReady) {
+      getVoucerDetailAPI(query.id);
+    }
+  }, [isReady]);
   return (
     <>
       <Navbar />
@@ -23,12 +45,12 @@ function Detail() {
           </div>
           <div className="row">
             <div className="col-xl-3 col-lg-4 col-md-5 pb-30 pb-md-0 pe-md-25 text-md-start">
-              <TopUpItem type="mobile" />
+              <TopUpItem data={dataItem} type="mobile" />
             </div>
             <div className="col-xl-9 col-lg-8 col-md-7 ps-md-25">
-              <TopUpItem type="desktop" />
+              <TopUpItem data={dataItem} type="desktop" />
               <hr />
-              <TopUpForm />
+              <TopUpForm nominals={nominals} payments={payments} />
             </div>
           </div>
         </div>
