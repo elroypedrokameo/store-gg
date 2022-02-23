@@ -481,6 +481,7 @@
 @media (min-width: 1400px){
     .container-xxl{
         max-width: 1420px;
+        margin : 10px;
     }
 }
 
