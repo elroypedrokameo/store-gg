@@ -10,8 +10,15 @@ export async function getFeaturedGame() {
   return axiosResponse.data;
 }
 
-export async function getDetailVoucer(id: any) {
+export async function getDetailVoucer(id: string) {
   const URL = `players/${id}/detail`;
+  const response = await axios.get(`${ROOT_API}/${API_VERSION}/${URL}`);
+  const axiosResponse = response.data;
+  return axiosResponse.data;
+}
+
+export async function getGameCategory() {
+  const URL = 'players/category';
   const response = await axios.get(`${ROOT_API}/${API_VERSION}/${URL}`);
   const axiosResponse = response.data;
   return axiosResponse.data;

@@ -29,7 +29,8 @@
         "jsx-a11y/no-redundant-roles": "off",
         "import/no-unresolved": "off",
         "jsx-a11y/label-has-associated-control": "off",
-        "no-underscore-dangle": "off"
+        "no-underscore-dangle": "off",
+        "jsx-a11y/img-redundant-alt": "off"
         // "label-has-associated-control": "off"
     }
 }
